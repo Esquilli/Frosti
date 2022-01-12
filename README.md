@@ -18,7 +18,7 @@
 - Vanilla SwiftUI + Combine + MVVM
 - No external dependencies
 - Core location
-- OpenWeather API
+- OpenWeatherMap API
 
 ## Screenshot
 ![App Screenshot](./Assets/Mockup.png)
@@ -26,18 +26,21 @@
 ## Getting Started
 
 ### Prerequisites
+1. Xcode
+1. An OpenWeatherMap API key
+
 
 ### Installation
 1. Clone or download the project to your local machine
-2. Open and replace `<YOUR API KEY>` with your OpenWeather API key in `Endpoint+Weather.swift`
+2. Open and replace `<YOUR API KEY>` with your OpenWeatherMap API key in `Endpoint+Weather.swift`
 
 ```swift
 extension Endpoint {
     struct Weather: EndpointProtocol {
-
-    ...
-    private static let newsApiKey = "<YOUR API KEY HERE>"
-    ...
+        ...
+        private static let newsApiKey = "<YOUR API KEY HERE>"
+        ...
+    }
 ```
 
 ## To-Do
